@@ -13,6 +13,7 @@
 #include "history.h"
 #include "similar.h"
 #include "window_api.h"
+#include "loogal/watch_config.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -67,6 +68,13 @@ int main(int argc, char **argv) {
     }
 
     const char *cmd = argv[1];
+
+    if (!strcmp(cmd, "watch-add")) return loogal_cmd_watch_add(argc, argv);
+    if (!strcmp(cmd, "watch-list")) return loogal_cmd_watch_list(argc, argv);
+    if (!strcmp(cmd, "watch-remove")) return loogal_cmd_watch_remove(argc, argv);
+    if (!strcmp(cmd, "watch-enable")) return loogal_cmd_watch_enable(argc, argv);
+    if (!strcmp(cmd, "watch-disable")) return loogal_cmd_watch_disable(argc, argv);
+
     int rc = 1;
 
     if (strcmp(cmd, "index") == 0) {
