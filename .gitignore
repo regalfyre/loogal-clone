@@ -1,5 +1,19 @@
-
-# runtime + build junk
+# build outputs
+loogal
 loogal-window
 loogal-gallery-window
+*.o
+*.bak.*
+
+# runtime data
 data/logs/
+data/sessions/
+data/history/
+data/watch/*.tmp
+
+# local generated indexes / records
+data/*.bin
+data/records.jsonl
+
+# test junk
+data/.loogal_action_test_file.txt
