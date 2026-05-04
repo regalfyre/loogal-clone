@@ -1,0 +1,56 @@
+{"ts":"2026-05-04T10:06:09-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.start","status":"ok","message":"starting directory index"}
+{"ts":"2026-05-04T10:06:09-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.scan_dir","status":"ok","message":"scanning /tmp/loogal-smoke"}
+{"ts":"2026-05-04T10:06:09-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.complete","status":"ok","message":"indexed 3 images"}
+{"ts":"2026-05-04T10:06:09-0600","tool":"loogal","schema":"loogal.audit.v1","event":"command","status":"ok","message":"command=index rc=0 duration_ms=53.213"}
+{"ts":"2026-05-04T10:06:09-0600","tool":"loogal","schema":"loogal.audit.v1","event":"search.complete","status":"ok","message":"query=/tmp/loogal-smoke/a/box.png threshold=90 candidates=3 hits=2"}
+{"ts":"2026-05-04T10:06:09-0600","tool":"loogal","schema":"loogal.audit.v1","event":"command","status":"ok","message":"command=search rc=0 duration_ms=45.500"}
+{"ts":"2026-05-04T10:06:09-0600","tool":"loogal","schema":"loogal.audit.v1","event":"stats","status":"ok","message":"printed status"}
+{"ts":"2026-05-04T10:06:09-0600","tool":"loogal","schema":"loogal.audit.v1","event":"command","status":"ok","message":"command=stats rc=0 duration_ms=0.418"}
+{"ts":"2026-05-04T10:06:09-0600","tool":"loogal","schema":"loogal.audit.v1","event":"dedupe.complete","status":"ok","message":"clusters=1 moved=0 dry_run=1"}
+{"ts":"2026-05-04T10:06:09-0600","tool":"loogal","schema":"loogal.audit.v1","event":"command","status":"ok","message":"command=dedupe rc=0 duration_ms=0.273"}
+{"ts":"2026-05-04T10:06:09-0600","tool":"loogal","schema":"loogal.audit.v1","event":"search.complete","status":"ok","message":"query=/tmp/loogal-smoke/a/box.png threshold=90 candidates=3 hits=2"}
+{"ts":"2026-05-04T10:06:09-0600","tool":"loogal","schema":"loogal.audit.v1","event":"command","status":"ok","message":"command=search rc=0 duration_ms=65.586"}
+{"ts":"2026-05-04T11:20:42-0600","tool":"loogal","schema":"loogal.audit.v1","event":"learn","status":"ok","message":"delegating to index"}
+{"ts":"2026-05-04T11:20:42-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.start","status":"ok","message":"starting directory index"}
+{"ts":"2026-05-04T11:20:42-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.scan_dir","status":"ok","message":"scanning /home/big-bro/Pictures"}
+{"ts":"2026-05-04T11:21:00-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 100 images so far"}
+{"ts":"2026-05-04T11:21:45-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 200 images so far"}
+{"ts":"2026-05-04T11:22:39-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 300 images so far"}
+{"ts":"2026-05-04T11:23:22-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 400 images so far"}
+{"ts":"2026-05-04T11:23:41-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 500 images so far"}
+{"ts":"2026-05-04T11:23:56-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 600 images so far"}
+{"ts":"2026-05-04T11:24:13-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 700 images so far"}
+{"ts":"2026-05-04T11:24:31-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 800 images so far"}
+{"ts":"2026-05-04T11:24:50-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 900 images so far"}
+{"ts":"2026-05-04T11:25:16-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 1000 images so far"}
+{"ts":"2026-05-04T11:25:34-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 1100 images so far"}
+{"ts":"2026-05-04T11:25:54-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 1200 images so far"}
+{"ts":"2026-05-04T11:26:13-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 1300 images so far"}
+{"ts":"2026-05-04T11:26:30-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 1400 images so far"}
+{"ts":"2026-05-04T11:26:53-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 1500 images so far"}
+{"ts":"2026-05-04T11:27:02-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 1600 images so far"}
+{"ts":"2026-05-04T11:27:14-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 1700 images so far"}
+{"ts":"2026-05-04T11:27:42-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 1800 images so far"}
+{"ts":"2026-05-04T11:28:01-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 1900 images so far"}
+{"ts":"2026-05-04T11:28:16-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 2000 images so far"}
+{"ts":"2026-05-04T11:28:28-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.skip","status":"warn","message":"/home/big-bro/Pictures/Prompt/a to b/skinny_aging/make her look thinner, as if she's finally reach an age of aesthetic and balanced maturity/a.png"}
+{"ts":"2026-05-04T11:28:28-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.skip","status":"warn","message":"/home/big-bro/Pictures/Prompt/a to b/skinny_aging/make her look thinner, as if she's finally reach an age of aesthetic and balanced maturity/b.png"}
+{"ts":"2026-05-04T11:28:31-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 2100 images so far"}
+{"ts":"2026-05-04T11:28:50-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 2200 images so far"}
+{"ts":"2026-05-04T11:29:04-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 2300 images so far"}
+{"ts":"2026-05-04T11:29:12-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 2400 images so far"}
+{"ts":"2026-05-04T11:29:32-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 2500 images so far"}
+{"ts":"2026-05-04T11:30:15-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 2600 images so far"}
+{"ts":"2026-05-04T11:30:54-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 2700 images so far"}
+{"ts":"2026-05-04T11:31:05-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 2800 images so far"}
+{"ts":"2026-05-04T11:31:14-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 2900 images so far"}
+{"ts":"2026-05-04T11:31:20-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.skip","status":"warn","message":"/home/big-bro/Pictures/Prompt/pool/top_directory_only_uploaded_aztec cumdump aesthetic/black_cumdump aesthetic/the dead perfects/Na'Ziyah Harris. perfect victim_C.jpg"}
+{"ts":"2026-05-04T11:31:23-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 3000 images so far"}
+{"ts":"2026-05-04T11:31:36-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 3100 images so far"}
+{"ts":"2026-05-04T11:31:52-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 3200 images so far"}
+{"ts":"2026-05-04T11:32:04-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 3300 images so far"}
+{"ts":"2026-05-04T11:32:27-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 3400 images so far"}
+{"ts":"2026-05-04T11:32:35-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 3500 images so far"}
+{"ts":"2026-05-04T11:32:49-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.progress","status":"ok","message":"indexed 3600 images so far"}
+{"ts":"2026-05-04T11:32:58-0600","tool":"loogal","schema":"loogal.audit.v1","event":"index.complete","status":"ok","message":"indexed 3689 images"}
+{"ts":"2026-05-04T11:32:58-0600","tool":"loogal","schema":"loogal.audit.v1","event":"command","status":"ok","message":"command=learn rc=0 duration_ms=735603.269"}
