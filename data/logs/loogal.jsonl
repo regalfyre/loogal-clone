@@ -273,3 +273,12 @@
 {"ts":"2026-05-04T15:10:46-0600","tool":"loogal","schema":"loogal.audit.v1","event":"session","status":"ok","message":"paged session by replaying stored query"}
 {"ts":"2026-05-04T15:10:46-0600","tool":"loogal","schema":"loogal.audit.v1","event":"command","status":"ok","message":"command=session rc=0 duration_ms=151.469"}
 {"ts":"2026-05-04T15:10:46-0600","tool":"loogal","schema":"loogal.audit.v1","event":"command","status":"ok","message":"command=window-api rc=0 duration_ms=155.032"}
+{"ts":"2026-05-04T15:14:46-0600","tool":"loogal","schema":"loogal.audit.v1","event":"search.complete","status":"ok","message":"query=/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192701.png place=/home/big-bro/Pictures min=60.000 candidates=3689 hits=305 limit=10 offset=0 json=1 duration_ms=253.283"}
+{"ts":"2026-05-04T15:14:46-0600","tool":"loogal","schema":"loogal.audit.v1","event":"command","status":"ok","message":"command=search rc=0 duration_ms=253.690"}
+{"ts":"2026-05-04T15:14:46-0600","tool":"loogal","schema":"loogal.audit.v1","event":"session","status":"ok","message":"paged session by replaying stored query"}
+{"ts":"2026-05-04T15:14:46-0600","tool":"loogal","schema":"loogal.audit.v1","event":"command","status":"ok","message":"command=session rc=0 duration_ms=256.951"}
+{"ts":"2026-05-04T15:14:46-0600","tool":"loogal","schema":"loogal.audit.v1","event":"command","status":"ok","message":"command=window-api rc=0 duration_ms=260.122"}
+{"ts":"2026-05-04T15:14:50-0600","tool":"loogal","schema":"loogal.audit.v1","event":"action","status":"ok","message":"action=copy-path adapter=xsel path=/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192701.png dry_run=0"}
+{"ts":"2026-05-04T15:14:50-0600","tool":"loogal","schema":"loogal.audit.v1","event":"command","status":"ok","message":"command=action rc=0 duration_ms=4.719"}
+{"ts":"2026-05-04T15:15:43-0600","tool":"loogal","schema":"loogal.audit.v1","event":"action","status":"ok","message":"action=open adapter=xdg-open path=/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192705.png dry_run=0"}
+{"ts":"2026-05-04T15:15:43-0600","tool":"loogal","schema":"loogal.audit.v1","event":"command","status":"ok","message":"command=action rc=0 duration_ms=0.473"}
