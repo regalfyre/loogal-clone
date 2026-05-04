@@ -8,8 +8,9 @@
 
 CORE INDEXING + SEARCH
 ──────────────────────────────────────────────────────────────────────
-
+```text
 loogal index <directories...>
+```
     → Scans directories and builds/updates binary visual index
 
 loogal learn <directories...>
@@ -23,22 +24,22 @@ loogal stats
     → Shows index stats (image count, size, etc.)
 
 
-
 DEDUPLICATION
 ──────────────────────────────────────────────────────────────────────
-
+```text
 loogal dedupe --keep N [--dry-run] [--move-removed DIR] [--protect DIR...]
+```
+
+
     → Finds near-duplicate images
     → --keep N           keep N copies
     → --dry-run          preview only
     → --move-removed     move extras instead of deleting
     → --protect          never touch certain directories
 
-
-
 THUMBNAILS + ACTIONS
 ──────────────────────────────────────────────────────────────────────
-
+```text
 loogal thumbnail <path|create|session|status>
     → Manages thumbnails for fast UI rendering
 
@@ -50,12 +51,12 @@ loogal action open --path <file>
 
 loogal action copy-path --path <file>
     → Copies file path to clipboard
-
+```
 
 
 SESSION SYSTEM (VISUAL SEARCH MEMORY)
 ──────────────────────────────────────────────────────────────────────
-
+```text
 loogal session create --query <image> --place <dir> [--json]
     → Creates a search session tied to an image
 
@@ -65,19 +66,19 @@ loogal history push --query <image> --session <id>
 loogal similar --path <image> --place <dir> [--json]
     → Alternate search entry (similar to session create)
 
-
+```
 
 WINDOW API (GUI BACKEND)
 ──────────────────────────────────────────────────────────────────────
-
+```text
 loogal window-api page --session <id> [--json]
     → Returns paginated results for GUI window
-
+```
 
 
 WATCH SYSTEM (SCHEDULED INDEXING)
 ──────────────────────────────────────────────────────────────────────
-
+```text
 loogal watch-add <path> --daily HH:MM
     → Index path every day at given time
 
@@ -111,11 +112,11 @@ loogal watch-run --dry-run
 loogal watch-run --all
     → Forces indexing of ALL watched paths
 
-
+```
 
 SYSTEM + DEBUGGING
 ──────────────────────────────────────────────────────────────────────
-
+```text
 loogal doctor
     → Runs diagnostics on environment + dependencies
 
@@ -141,14 +142,14 @@ loogal status
     → Overall system status
 
 
-
+```
 GUI (WINDOW SYSTEM)
 ──────────────────────────────────────────────────────────────────────
-
+```text
 make loogal-window
 ./loogal-window
     → Opens visual interface
-
+```
 Features:
     - grid layout
     - double-click viewer
@@ -162,10 +163,15 @@ CURRENT CAPABILITIES
 ──────────────────────────────────────────────────────────────────────
 
 ✔ Local-first visual search
+
 ✔ Binary index (fast hot path)
+
 ✔ JSONL truth layer
+
 ✔ Scheduled indexing system
+
 ✔ GUI viewer + sessions
+
 ✔ Deterministic hashing (dHash v1 in C)
 
 
@@ -174,12 +180,12 @@ NEXT EVOLUTION
 ──────────────────────────────────────────────────────────────────────
 
 DROP ANYWHERE SEARCH
-
+```
 drag image → drop into window
     → new session created
     → new window opens
     → current session preserved
-
+```
 No buttons. No friction. Pure intent.
 
 
