@@ -14,6 +14,7 @@
 #include "similar.h"
 #include "window_api.h"
 #include "loogal/watch_config.h"
+#include "loogal/watch_run.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -44,6 +45,9 @@ static void usage(void) {
     puts("  loogal rebuild <directories...>");
     puts("  loogal where");
     puts("  loogal status");
+puts("  loogal watch-list");
+puts("  loogal watch-add <path> --daily HH:MM | --hourly | --weekly day HH:MM | --yearly MM-DD HH:MM");
+puts("  loogal watch-run [--dry-run|--all]");
 }
 
 static int finish_command(const char *cmd, int rc, double start_ms) {
@@ -71,6 +75,7 @@ int main(int argc, char **argv) {
 
     if (!strcmp(cmd, "watch-add")) return loogal_cmd_watch_add(argc, argv);
     if (!strcmp(cmd, "watch-list")) return loogal_cmd_watch_list(argc, argv);
+    if (!strcmp(cmd, "watch-run")) return loogal_cmd_watch_run(argc, argv);
     if (!strcmp(cmd, "watch-remove")) return loogal_cmd_watch_remove(argc, argv);
     if (!strcmp(cmd, "watch-enable")) return loogal_cmd_watch_enable(argc, argv);
     if (!strcmp(cmd, "watch-disable")) return loogal_cmd_watch_disable(argc, argv);
