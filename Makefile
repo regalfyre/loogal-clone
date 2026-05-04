@@ -65,3 +65,9 @@ loogal-window: src/gui/loogal_window.c include/gui/loogal_window.h loogal
 
 test-window:
 	bash tests/test_window_build.sh
+
+loogal-gallery-window: src/gui/loogal_gallery_window.c
+	$(CC) $(CFLAGS) -Iinclude -o loogal-gallery-window src/gui/loogal_gallery_window.c $(shell pkg-config --cflags --libs gtk4)
+
+test-gallery-window:
+	bash tests/test_gallery_window_build.sh
