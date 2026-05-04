@@ -1,39 +1,261 @@
+#define _XOPEN_SOURCE 700
 #include "loogal.h"
+#include "jsonout.h"
+#include "timer.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
+#include <limits.h>
+#include <unistd.h>
 
-typedef struct { int pct; LoogalRecord rec; } Hit;
-static int cmp_hit(const void *a, const void *b) { return ((Hit*)b)->pct - ((Hit*)a)->pct; }
+#ifndef PATH_MAX
+#define PATH_MAX 4096
+#endif
+
+typedef struct {
+    int hash_distance;
+    double similarity;
+    LoogalRecord rec;
+} Hit;
+
+static int cmp_hit(const void *a, const void *b) {
+    const Hit *ha = (const Hit *)a;
+    const Hit *hb = (const Hit *)b;
+    if (ha->hash_distance != hb->hash_distance) return ha->hash_distance - hb->hash_distance;
+    return strcmp(ha->rec.path, hb->rec.path);
+}
+
+static int is_numberish(const char *s) {
+    if (!s || !*s) return 0;
+    int dot_seen = 0;
+    for (const char *p = s; *p; p++) {
+        if (*p == '.') {
+            if (dot_seen) return 0;
+            dot_seen = 1;
+            continue;
+        }
+        if (!isdigit((unsigned char)*p)) return 0;
+    }
+    return 1;
+}
+
+static int starts_with_path(const char *path, const char *prefix) {
+    if (!prefix || !*prefix) return 1;
+    size_t n = strlen(prefix);
+    if (strncmp(path, prefix, n) != 0) return 0;
+    return path[n] == '\0' || path[n] == '/';
+}
+
+static void normalize_path_best_effort(const char *in, char *out, size_t n) {
+    if (!out || n == 0) return;
+    if (!in || !*in) { snprintf(out, n, "%s", ""); return; }
+    char resolved[PATH_MAX];
+    if (realpath(in, resolved)) {
+        size_t len = strlen(resolved);
+        if (len >= n) len = n - 1;
+        memcpy(out, resolved, len);
+        out[len] = '\0';
+    } else {
+        snprintf(out, n, "%s", in);
+    }
+}
+
+static void print_action_json(FILE *out, const char *key, const char *cmd, const char *path, int comma) {
+    char action[LOOGAL_PATH_MAX + 128];
+    snprintf(action, sizeof(action), "%s --path '%s'", cmd, path);
+    fputs("      ", out);
+    loogal_json_string(out, key);
+    fputs(": ", out);
+    loogal_json_string(out, action);
+    if (comma) fputc(',', out);
+    fputc('\n', out);
+}
+
+static void print_json_results(
+    const char *query_path,
+    const char *place_filter,
+    double min_percent,
+    size_t candidates,
+    size_t total_hits,
+    Hit *hits,
+    size_t offset,
+    size_t limit,
+    double elapsed_ms
+) {
+    size_t end = offset + limit;
+    if (end > total_hits) end = total_hits;
+    size_t returned = offset < total_hits ? end - offset : 0;
+    double ips = elapsed_ms > 0.0 ? ((double)candidates / (elapsed_ms / 1000.0)) : 0.0;
+
+    puts("{");
+    printf("  "); loogal_json_kv_string(stdout, "tool", "loogal", 1);
+    printf("  "); loogal_json_kv_string(stdout, "type", "search.results", 1);
+    printf("  "); loogal_json_kv_string(stdout, "engine", "binary_index:dhash:v1", 1);
+    printf("  "); loogal_json_kv_string(stdout, "query", query_path, 1);
+    if (place_filter && *place_filter) {
+        printf("  "); loogal_json_kv_string(stdout, "place", place_filter, 1);
+    } else {
+        printf("  "); loogal_json_kv_string(stdout, "place", "memory", 1);
+    }
+    printf("  \"min_percent\": %.3f,\n", min_percent);
+    printf("  "); loogal_json_kv_int(stdout, "candidates", (long long)candidates, 1);
+    printf("  "); loogal_json_kv_int(stdout, "total_hits", (long long)total_hits, 1);
+    printf("  "); loogal_json_kv_int(stdout, "offset", (long long)offset, 1);
+    printf("  "); loogal_json_kv_int(stdout, "limit", (long long)limit, 1);
+    printf("  "); loogal_json_kv_int(stdout, "returned", (long long)returned, 1);
+    printf("  \"duration_ms\": %.3f,\n", elapsed_ms);
+    printf("  \"images_per_second\": %.3f,\n", ips);
+    puts("  \"results\": [");
+
+    for (size_t i = offset; i < end; i++) {
+        Hit *h = &hits[i];
+        double pct = h->similarity * 100.0;
+        const char *label = h->hash_distance == 0 ? "EXACT" : "NEAR";
+        printf("    {\n");
+        printf("      \"rank\": %zu,\n", i + 1);
+        printf("      \"path\": "); loogal_json_string(stdout, h->rec.path); puts(",");
+        printf("      \"label\": "); loogal_json_string(stdout, label); puts(",");
+        printf("      \"similarity\": %.6f,\n", h->similarity);
+        printf("      \"similarity_percent\": %.3f,\n", pct);
+        printf("      \"hash_distance\": %d,\n", h->hash_distance);
+        printf("      \"width\": %d,\n", h->rec.width);
+        printf("      \"height\": %d,\n", h->rec.height);
+        printf("      \"file_size_bytes\": %llu,\n", (unsigned long long)h->rec.file_size);
+        puts("      \"actions\": {");
+        print_action_json(stdout, "reveal", "loogal action reveal", h->rec.path, 1);
+        print_action_json(stdout, "open", "loogal action open", h->rec.path, 1);
+        print_action_json(stdout, "copy_path", "loogal action copy-path", h->rec.path, 1);
+        char search_action[LOOGAL_PATH_MAX + 128];
+        snprintf(search_action, sizeof(search_action), "loogal window --query '%s' --memory", h->rec.path);
+        fputs("      ", stdout); loogal_json_string(stdout, "search_similar"); fputs(": ", stdout); loogal_json_string(stdout, search_action); fputc('\n', stdout);
+        fputs("      }\n", stdout);
+        printf("    }%s\n", (i + 1 < end) ? "," : "");
+    }
+
+    puts("  ]");
+    puts("}");
+}
+
+static void print_human_results(
+    const char *query_path,
+    const char *place_filter,
+    double min_percent,
+    size_t candidates,
+    size_t total_hits,
+    Hit *hits,
+    size_t offset,
+    size_t limit,
+    double elapsed_ms
+) {
+    size_t end = offset + limit;
+    if (end > total_hits) end = total_hits;
+    size_t returned = offset < total_hits ? end - offset : 0;
+    double ips = elapsed_ms > 0.0 ? ((double)candidates / (elapsed_ms / 1000.0)) : 0.0;
+
+    puts("Loogal search results:");
+    printf("target:     %s\n", query_path);
+    printf("scope:      %s\n", (place_filter && *place_filter) ? place_filter : "memory/binary-index");
+    printf("min:        %.2f%%\n", min_percent);
+    printf("candidates: %zu\n", candidates);
+    printf("total hits: %zu\n", total_hits);
+    printf("returned:   %zu\n", returned);
+    printf("time:       %.3fs\n", elapsed_ms / 1000.0);
+    printf("speed:      %.0f images/sec\n\n", ips);
+
+    for (size_t i = offset; i < end; i++) {
+        Hit *h = &hits[i];
+        const char *label = h->hash_distance == 0 ? " [EXACT]" : "";
+        printf("%zu.%s %s\n", i + 1, label, h->rec.path);
+        printf("   match: %.3f%%  similarity: %.6f  hash: %d/64\n", h->similarity * 100.0, h->similarity, h->hash_distance);
+    }
+}
 
 int cmd_search(int argc, char **argv) {
-    if (argc < 1) { loogal_die("search", "usage: loogal search <image> [MIN_PERCENT]"); return 1; }
-    int threshold = 60;
-    if (argc >= 2) threshold = atoi(argv[1]);
-    if (threshold < 0) threshold = 0;
-    if (threshold > 100) threshold = 100;
+    if (argc < 1) {
+        loogal_die("search", "usage: loogal search <image> [place] [--min N] [--limit N] [--offset N] [--json]");
+        return 1;
+    }
+
+    const char *query_arg = argv[0];
+    char query_path[LOOGAL_PATH_MAX];
+    normalize_path_best_effort(query_arg, query_path, sizeof(query_path));
+
+    char place_filter[LOOGAL_PATH_MAX] = "";
+    double min_percent = 60.0;
+    size_t limit = 10;
+    size_t offset = 0;
+    int as_json = 0;
+
+    for (int i = 1; i < argc; i++) {
+        const char *a = argv[i];
+        if (strcmp(a, "--json") == 0) { as_json = 1; continue; }
+        if (strcmp(a, "--memory") == 0) { place_filter[0] = '\0'; continue; }
+        if (strcmp(a, "--min") == 0 && i + 1 < argc) { min_percent = atof(argv[++i]); continue; }
+        if (strcmp(a, "--limit") == 0 && i + 1 < argc) { long v = atol(argv[++i]); if (v > 0) limit = (size_t)v; continue; }
+        if (strcmp(a, "--offset") == 0 && i + 1 < argc) { long v = atol(argv[++i]); if (v >= 0) offset = (size_t)v; continue; }
+        if (is_numberish(a)) { min_percent = atof(a); continue; }
+        if (a[0] != '-' && place_filter[0] == '\0') {
+            normalize_path_best_effort(a, place_filter, sizeof(place_filter));
+            continue;
+        }
+    }
+
+    if (min_percent < 0.0) min_percent = 0.0;
+    if (min_percent > 100.0) min_percent = 100.0;
+    if (limit == 0) limit = 10;
+    if (limit > 10000) limit = 10000;
+
+    double start_ms = loogal_now_ms();
 
     LoogalImageInfo query;
-    if (image_probe(argv[0], &query) != 0) { loogal_die("search", "could not read query image"); return 1; }
-    LoogalRecord *records = NULL; size_t count = 0;
+    if (image_probe(query_arg, &query) != 0) {
+        loogal_die("search", "could not read query image");
+        return 1;
+    }
+
+    LoogalRecord *records = NULL;
+    size_t count = 0;
     if (read_index_records(&records, &count) != 0) return 1;
+
     Hit *hits = calloc(count ? count : 1, sizeof(Hit));
+    if (!hits && count) {
+        free(records);
+        loogal_die("search", "out of memory allocating hit list");
+        return 1;
+    }
+
+    size_t candidate_count = 0;
     size_t hcount = 0;
     for (size_t i = 0; i < count; i++) {
-        int pct = similarity_percent(query.dhash, records[i].dhash);
-        if (pct >= threshold) { hits[hcount].pct = pct; hits[hcount].rec = records[i]; hcount++; }
+        if (place_filter[0] && !starts_with_path(records[i].path, place_filter)) continue;
+        candidate_count++;
+        int dist = hamming64(query.dhash, records[i].dhash);
+        double sim = 1.0 - ((double)dist / 64.0);
+        double pct = sim * 100.0;
+        if (pct + 0.000001 >= min_percent) {
+            hits[hcount].hash_distance = dist;
+            hits[hcount].similarity = sim;
+            hits[hcount].rec = records[i];
+            hcount++;
+        }
     }
+
     qsort(hits, hcount, sizeof(Hit), cmp_hit);
-    printf("LOOGAL SEARCH\n");
-    printf("  Query       : %s\n", argv[0]);
-    printf("  Threshold   : %d%% and above\n", threshold);
-    printf("  Candidates  : %zu\n", count);
-    printf("  Hits        : %zu\n\n", hcount);
-    for (size_t i = 0; i < hcount; i++) {
-        printf("%3d  %s\n", hits[i].pct, hits[i].rec.path);
+    double elapsed_ms = loogal_now_ms() - start_ms;
+
+    if (as_json) {
+        print_json_results(query_path, place_filter, min_percent, candidate_count, hcount, hits, offset, limit, elapsed_ms);
+    } else {
+        print_human_results(query_path, place_filter, min_percent, candidate_count, hcount, hits, offset, limit, elapsed_ms);
     }
-    char msg[256]; snprintf(msg, sizeof(msg), "query=%s threshold=%d candidates=%zu hits=%zu", argv[0], threshold, count, hcount);
+
+    char msg[512];
+    snprintf(msg, sizeof(msg), "query=%.180s place=%.180s min=%.3f candidates=%zu hits=%zu limit=%zu offset=%zu json=%d duration_ms=%.3f",
+             query_path, place_filter[0] ? place_filter : "memory", min_percent, candidate_count, hcount, limit, offset, as_json, elapsed_ms);
     loogal_log("search.complete", "ok", msg);
-    free(hits); free(records);
+
+    free(hits);
+    free(records);
     return 0;
 }

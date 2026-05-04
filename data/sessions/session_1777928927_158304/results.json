@@ -1,0 +1,867 @@
+{
+  "tool": "loogal",
+  "type": "search.results",
+  "engine": "binary_index:dhash:v1",
+  "query": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192701.png",
+  "place": "/home/big-bro/Pictures",
+  "min_percent": 60.000,
+  "candidates": 3689,
+  "total_hits": 305,
+  "offset": 0,
+  "limit": 50,
+  "returned": 50,
+  "duration_ms": 125.940,
+  "images_per_second": 29291.822,
+  "results": [
+    {
+      "rank": 1,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192701.png",
+      "label": "EXACT",
+      "similarity": 1.000000,
+      "similarity_percent": 100.000,
+      "hash_distance": 0,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 693536,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192701.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192701.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192701.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192701.png' --memory"
+      }
+    },
+    {
+      "rank": 2,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192705.png",
+      "label": "EXACT",
+      "similarity": 1.000000,
+      "similarity_percent": 100.000,
+      "hash_distance": 0,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 730131,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192705.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192705.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192705.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192705.png' --memory"
+      }
+    },
+    {
+      "rank": 3,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192652.png",
+      "label": "NEAR",
+      "similarity": 0.984375,
+      "similarity_percent": 98.438,
+      "hash_distance": 1,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 693520,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192652.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192652.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192652.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192652.png' --memory"
+      }
+    },
+    {
+      "rank": 4,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192654.png",
+      "label": "NEAR",
+      "similarity": 0.984375,
+      "similarity_percent": 98.438,
+      "hash_distance": 1,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 713126,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192654.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192654.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192654.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192654.png' --memory"
+      }
+    },
+    {
+      "rank": 5,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192710-1.png",
+      "label": "NEAR",
+      "similarity": 0.984375,
+      "similarity_percent": 98.438,
+      "hash_distance": 1,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 697742,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192710-1.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192710-1.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192710-1.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192710-1.png' --memory"
+      }
+    },
+    {
+      "rank": 6,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192710.png",
+      "label": "NEAR",
+      "similarity": 0.968750,
+      "similarity_percent": 96.875,
+      "hash_distance": 2,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 699660,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192710.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192710.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192710.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192710.png' --memory"
+      }
+    },
+    {
+      "rank": 7,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192651.png",
+      "label": "NEAR",
+      "similarity": 0.953125,
+      "similarity_percent": 95.312,
+      "hash_distance": 3,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 700012,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192651.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192651.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192651.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192651.png' --memory"
+      }
+    },
+    {
+      "rank": 8,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192713.png",
+      "label": "NEAR",
+      "similarity": 0.953125,
+      "similarity_percent": 95.312,
+      "hash_distance": 3,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 684426,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192713.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192713.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192713.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192713.png' --memory"
+      }
+    },
+    {
+      "rank": 9,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192714.png",
+      "label": "NEAR",
+      "similarity": 0.953125,
+      "similarity_percent": 95.312,
+      "hash_distance": 3,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 698670,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192714.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192714.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192714.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192714.png' --memory"
+      }
+    },
+    {
+      "rank": 10,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192334.png",
+      "label": "NEAR",
+      "similarity": 0.921875,
+      "similarity_percent": 92.188,
+      "hash_distance": 5,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 731778,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192334.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192334.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192334.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192334.png' --memory"
+      }
+    },
+    {
+      "rank": 11,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192215.png",
+      "label": "NEAR",
+      "similarity": 0.906250,
+      "similarity_percent": 90.625,
+      "hash_distance": 6,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 666091,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192215.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192215.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192215.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192215.png' --memory"
+      }
+    },
+    {
+      "rank": 12,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192351.png",
+      "label": "NEAR",
+      "similarity": 0.890625,
+      "similarity_percent": 89.062,
+      "hash_distance": 7,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 754393,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192351.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192351.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192351.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192351.png' --memory"
+      }
+    },
+    {
+      "rank": 13,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192357.png",
+      "label": "NEAR",
+      "similarity": 0.890625,
+      "similarity_percent": 89.062,
+      "hash_distance": 7,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 751700,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192357.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192357.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192357.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192357.png' --memory"
+      }
+    },
+    {
+      "rank": 14,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192557.png",
+      "label": "NEAR",
+      "similarity": 0.890625,
+      "similarity_percent": 89.062,
+      "hash_distance": 7,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 673944,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192557.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192557.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192557.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192557.png' --memory"
+      }
+    },
+    {
+      "rank": 15,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192339.png",
+      "label": "NEAR",
+      "similarity": 0.875000,
+      "similarity_percent": 87.500,
+      "hash_distance": 8,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 628116,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192339.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192339.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192339.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192339.png' --memory"
+      }
+    },
+    {
+      "rank": 16,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191744.png",
+      "label": "NEAR",
+      "similarity": 0.859375,
+      "similarity_percent": 85.938,
+      "hash_distance": 9,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 574015,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191744.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191744.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191744.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191744.png' --memory"
+      }
+    },
+    {
+      "rank": 17,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191843.png",
+      "label": "NEAR",
+      "similarity": 0.859375,
+      "similarity_percent": 85.938,
+      "hash_distance": 9,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 737610,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191843.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191843.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191843.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191843.png' --memory"
+      }
+    },
+    {
+      "rank": 18,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191921.png",
+      "label": "NEAR",
+      "similarity": 0.859375,
+      "similarity_percent": 85.938,
+      "hash_distance": 9,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 665057,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191921.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191921.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191921.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191921.png' --memory"
+      }
+    },
+    {
+      "rank": 19,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191655.png",
+      "label": "NEAR",
+      "similarity": 0.843750,
+      "similarity_percent": 84.375,
+      "hash_distance": 10,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 688849,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191655.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191655.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191655.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191655.png' --memory"
+      }
+    },
+    {
+      "rank": 20,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191752.png",
+      "label": "NEAR",
+      "similarity": 0.843750,
+      "similarity_percent": 84.375,
+      "hash_distance": 10,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 408148,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191752.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191752.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191752.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191752.png' --memory"
+      }
+    },
+    {
+      "rank": 21,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191755.png",
+      "label": "NEAR",
+      "similarity": 0.843750,
+      "similarity_percent": 84.375,
+      "hash_distance": 10,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 400933,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191755.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191755.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191755.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191755.png' --memory"
+      }
+    },
+    {
+      "rank": 22,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191923-1.png",
+      "label": "NEAR",
+      "similarity": 0.843750,
+      "similarity_percent": 84.375,
+      "hash_distance": 10,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 687263,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191923-1.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191923-1.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191923-1.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191923-1.png' --memory"
+      }
+    },
+    {
+      "rank": 23,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192319.png",
+      "label": "NEAR",
+      "similarity": 0.843750,
+      "similarity_percent": 84.375,
+      "hash_distance": 10,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 724687,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192319.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192319.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192319.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192319.png' --memory"
+      }
+    },
+    {
+      "rank": 24,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191853.png",
+      "label": "NEAR",
+      "similarity": 0.828125,
+      "similarity_percent": 82.812,
+      "hash_distance": 11,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 724347,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191853.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191853.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191853.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191853.png' --memory"
+      }
+    },
+    {
+      "rank": 25,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191909.png",
+      "label": "NEAR",
+      "similarity": 0.828125,
+      "similarity_percent": 82.812,
+      "hash_distance": 11,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 775590,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191909.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191909.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191909.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191909.png' --memory"
+      }
+    },
+    {
+      "rank": 26,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192229.png",
+      "label": "NEAR",
+      "similarity": 0.828125,
+      "similarity_percent": 82.812,
+      "hash_distance": 11,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 693692,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192229.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192229.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192229.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192229.png' --memory"
+      }
+    },
+    {
+      "rank": 27,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192258.png",
+      "label": "NEAR",
+      "similarity": 0.828125,
+      "similarity_percent": 82.812,
+      "hash_distance": 11,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 711657,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192258.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192258.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192258.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192258.png' --memory"
+      }
+    },
+    {
+      "rank": 28,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192318.png",
+      "label": "NEAR",
+      "similarity": 0.828125,
+      "similarity_percent": 82.812,
+      "hash_distance": 11,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 723898,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192318.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192318.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192318.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192318.png' --memory"
+      }
+    },
+    {
+      "rank": 29,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191920.png",
+      "label": "NEAR",
+      "similarity": 0.812500,
+      "similarity_percent": 81.250,
+      "hash_distance": 12,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 667260,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191920.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191920.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191920.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191920.png' --memory"
+      }
+    },
+    {
+      "rank": 30,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191923.png",
+      "label": "NEAR",
+      "similarity": 0.812500,
+      "similarity_percent": 81.250,
+      "hash_distance": 12,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 689242,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191923.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191923.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191923.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191923.png' --memory"
+      }
+    },
+    {
+      "rank": 31,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191935.png",
+      "label": "NEAR",
+      "similarity": 0.812500,
+      "similarity_percent": 81.250,
+      "hash_distance": 12,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 716865,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191935.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191935.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191935.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191935.png' --memory"
+      }
+    },
+    {
+      "rank": 32,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192201.png",
+      "label": "NEAR",
+      "similarity": 0.812500,
+      "similarity_percent": 81.250,
+      "hash_distance": 12,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 575878,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192201.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192201.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192201.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192201.png' --memory"
+      }
+    },
+    {
+      "rank": 33,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192204.png",
+      "label": "NEAR",
+      "similarity": 0.812500,
+      "similarity_percent": 81.250,
+      "hash_distance": 12,
+      "width": 1921,
+      "height": 1049,
+      "file_size_bytes": 640832,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192204.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192204.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192204.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192204.png' --memory"
+      }
+    },
+    {
+      "rank": 34,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192210.png",
+      "label": "NEAR",
+      "similarity": 0.812500,
+      "similarity_percent": 81.250,
+      "hash_distance": 12,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 742633,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192210.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192210.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192210.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192210.png' --memory"
+      }
+    },
+    {
+      "rank": 35,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191828.png",
+      "label": "NEAR",
+      "similarity": 0.796875,
+      "similarity_percent": 79.688,
+      "hash_distance": 13,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 742244,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191828.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191828.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191828.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191828.png' --memory"
+      }
+    },
+    {
+      "rank": 36,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192316.png",
+      "label": "NEAR",
+      "similarity": 0.796875,
+      "similarity_percent": 79.688,
+      "hash_distance": 13,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 767639,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192316.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192316.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192316.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192316.png' --memory"
+      }
+    },
+    {
+      "rank": 37,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191652.png",
+      "label": "NEAR",
+      "similarity": 0.781250,
+      "similarity_percent": 78.125,
+      "hash_distance": 14,
+      "width": 1921,
+      "height": 1049,
+      "file_size_bytes": 691719,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191652.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191652.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191652.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191652.png' --memory"
+      }
+    },
+    {
+      "rank": 38,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191918.png",
+      "label": "NEAR",
+      "similarity": 0.781250,
+      "similarity_percent": 78.125,
+      "hash_distance": 14,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 664970,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191918.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191918.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191918.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191918.png' --memory"
+      }
+    },
+    {
+      "rank": 39,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191931.png",
+      "label": "NEAR",
+      "similarity": 0.781250,
+      "similarity_percent": 78.125,
+      "hash_distance": 14,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 710604,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191931.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191931.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191931.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191931.png' --memory"
+      }
+    },
+    {
+      "rank": 40,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191936.png",
+      "label": "NEAR",
+      "similarity": 0.781250,
+      "similarity_percent": 78.125,
+      "hash_distance": 14,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 678689,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191936.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191936.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191936.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191936.png' --memory"
+      }
+    },
+    {
+      "rank": 41,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192024.png",
+      "label": "NEAR",
+      "similarity": 0.781250,
+      "similarity_percent": 78.125,
+      "hash_distance": 14,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 612849,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192024.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192024.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192024.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192024.png' --memory"
+      }
+    },
+    {
+      "rank": 42,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191651.png",
+      "label": "NEAR",
+      "similarity": 0.765625,
+      "similarity_percent": 76.562,
+      "hash_distance": 15,
+      "width": 1921,
+      "height": 1049,
+      "file_size_bytes": 686188,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191651.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191651.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191651.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_191651.png' --memory"
+      }
+    },
+    {
+      "rank": 43,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192046.png",
+      "label": "NEAR",
+      "similarity": 0.765625,
+      "similarity_percent": 76.562,
+      "hash_distance": 15,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 668219,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192046.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192046.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192046.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192046.png' --memory"
+      }
+    },
+    {
+      "rank": 44,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260502_234004.png",
+      "label": "NEAR",
+      "similarity": 0.750000,
+      "similarity_percent": 75.000,
+      "hash_distance": 16,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 1254726,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260502_234004.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260502_234004.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260502_234004.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260502_234004.png' --memory"
+      }
+    },
+    {
+      "rank": 45,
+      "path": "/home/big-bro/Pictures/Teachers/toonified/elizabeth-juarez.webp",
+      "label": "NEAR",
+      "similarity": 0.750000,
+      "similarity_percent": 75.000,
+      "hash_distance": 16,
+      "width": 764,
+      "height": 432,
+      "file_size_bytes": 13450,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Teachers/toonified/elizabeth-juarez.webp'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Teachers/toonified/elizabeth-juarez.webp'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Teachers/toonified/elizabeth-juarez.webp'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Teachers/toonified/elizabeth-juarez.webp' --memory"
+      }
+    },
+    {
+      "rank": 46,
+      "path": "/home/big-bro/Pictures/Prompt/ugly_easy_prey.jpg",
+      "label": "NEAR",
+      "similarity": 0.734375,
+      "similarity_percent": 73.438,
+      "hash_distance": 17,
+      "width": 536,
+      "height": 448,
+      "file_size_bytes": 17641,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Prompt/ugly_easy_prey.jpg'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Prompt/ugly_easy_prey.jpg'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Prompt/ugly_easy_prey.jpg'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Prompt/ugly_easy_prey.jpg' --memory"
+      }
+    },
+    {
+      "rank": 47,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260418_015421.png",
+      "label": "NEAR",
+      "similarity": 0.734375,
+      "similarity_percent": 73.438,
+      "hash_distance": 17,
+      "width": 1920,
+      "height": 1080,
+      "file_size_bytes": 939994,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260418_015421.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260418_015421.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260418_015421.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260418_015421.png' --memory"
+      }
+    },
+    {
+      "rank": 48,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260422_152803.png",
+      "label": "NEAR",
+      "similarity": 0.734375,
+      "similarity_percent": 73.438,
+      "hash_distance": 17,
+      "width": 882,
+      "height": 531,
+      "file_size_bytes": 496548,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260422_152803.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260422_152803.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260422_152803.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260422_152803.png' --memory"
+      }
+    },
+    {
+      "rank": 49,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260422_210215.png",
+      "label": "NEAR",
+      "similarity": 0.734375,
+      "similarity_percent": 73.438,
+      "hash_distance": 17,
+      "width": 1921,
+      "height": 1049,
+      "file_size_bytes": 132956,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260422_210215.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260422_210215.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260422_210215.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260422_210215.png' --memory"
+      }
+    },
+    {
+      "rank": 50,
+      "path": "/home/big-bro/Pictures/Screenshots/Screenshot_20260429_205935.png",
+      "label": "NEAR",
+      "similarity": 0.734375,
+      "similarity_percent": 73.438,
+      "hash_distance": 17,
+      "width": 1920,
+      "height": 1048,
+      "file_size_bytes": 392994,
+      "actions": {
+      "reveal": "loogal action reveal --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260429_205935.png'",
+      "open": "loogal action open --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260429_205935.png'",
+      "copy_path": "loogal action copy-path --path '/home/big-bro/Pictures/Screenshots/Screenshot_20260429_205935.png'",
+      "search_similar": "loogal window --query '/home/big-bro/Pictures/Screenshots/Screenshot_20260429_205935.png' --memory"
+      }
+    }
+  ]
+}

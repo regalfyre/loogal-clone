@@ -1,0 +1,14 @@
+{"ts":"2026-05-04T14:11:43-0600","tool":"loogal","type":"history.clear","current_index":-1}
+{"ts":"2026-05-04T14:11:43-0600","tool":"loogal","type":"history.push","current_index":0,"index":0,"query":"/tmp/a.png","session":"session_a","scroll_offset":0,"selected_rank":1}
+{"ts":"2026-05-04T14:11:43-0600","tool":"loogal","type":"history.push","current_index":1,"index":1,"query":"/tmp/b.png","session":"session_b","scroll_offset":10,"selected_rank":2}
+{"ts":"2026-05-04T14:11:43-0600","tool":"loogal","type":"history.back","current_index":0,"index":0,"query":"/tmp/a.png","session":"session_a","scroll_offset":0,"selected_rank":1}
+{"ts":"2026-05-04T14:11:43-0600","tool":"loogal","type":"history.forward","current_index":1,"index":1,"query":"/tmp/b.png","session":"session_b","scroll_offset":10,"selected_rank":2}
+{"ts":"2026-05-04T14:15:41-0600","tool":"loogal","type":"history.clear","current_index":-1}
+{"ts":"2026-05-04T14:15:41-0600","tool":"loogal","type":"history.push","current_index":0,"index":0,"query":"/tmp/a.png","session":"session_a","scroll_offset":0,"selected_rank":1}
+{"ts":"2026-05-04T14:15:41-0600","tool":"loogal","type":"history.push","current_index":1,"index":1,"query":"/tmp/b.png","session":"session_b","scroll_offset":10,"selected_rank":2}
+{"ts":"2026-05-04T14:15:41-0600","tool":"loogal","type":"history.back","current_index":0,"index":0,"query":"/tmp/a.png","session":"session_a","scroll_offset":0,"selected_rank":1}
+{"ts":"2026-05-04T14:15:41-0600","tool":"loogal","type":"history.forward","current_index":1,"index":1,"query":"/tmp/b.png","session":"session_b","scroll_offset":10,"selected_rank":2}
+{"ts":"2026-05-04T14:22:40-0600","tool":"loogal","type":"history.push","current_index":2,"index":2,"query":"/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192701.png","session":"session_1777926160_63327","scroll_offset":0,"selected_rank":1}
+{"ts":"2026-05-04T14:31:29-0600","tool":"loogal","type":"history.push","current_index":3,"index":3,"query":"/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192701.png","session":"session_1777926689_81953","scroll_offset":0,"selected_rank":1}
+{"ts":"2026-05-04T15:08:47-0600","tool":"loogal","type":"history.push","current_index":4,"index":4,"query":"/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192701.png","session":"session_1777928927_158304","scroll_offset":0,"selected_rank":1}
+{"ts":"2026-05-04T15:08:51-0600","tool":"loogal","type":"history.push","current_index":5,"index":5,"query":"/home/big-bro/Pictures/Screenshots/Screenshot_20260503_192701.png","session":"session_1777928931_158440","scroll_offset":0,"selected_rank":1}

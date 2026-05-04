@@ -7,6 +7,12 @@
 #include "rebuild.h"
 #include "learn.h"
 #include "bench.h"
+#include "thumbnail.h"
+#include "action.h"
+#include "session.h"
+#include "history.h"
+#include "similar.h"
+#include "window_api.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -21,6 +27,14 @@ static void usage(void) {
     puts("  loogal search <image> [MIN_PERCENT]");
     puts("  loogal stats");
     puts("  loogal dedupe --keep N [--dry-run] [--move-removed DIR] [--protect DIR...]");
+    puts("  loogal thumbnail <path|create|session|status>");
+    puts("  loogal action reveal --path <file>");
+    puts("  loogal action open --path <file>");
+    puts("  loogal action copy-path --path <file>");
+    puts("  loogal session create --query <image> --place <dir> [--json]");
+    puts("  loogal history push --query <image> --session <id>");
+    puts("  loogal similar --path <image> --place <dir> [--json]");
+    puts("  loogal window-api page --session <id> [--json]");
     puts("  loogal doctor");
     puts("  loogal config");
     puts("  loogal why <path>");
@@ -75,6 +89,11 @@ return finish_command(cmd, rc, start_ms);
         return finish_command(cmd, rc, start_ms);
     }
 
+    if (strcmp(cmd, "thumbnail") == 0) {
+        rc = cmd_thumbnail(argc - 2, argv + 2);
+        return finish_command(cmd, rc, start_ms);
+    }
+
     if (strcmp(cmd, "stats") == 0 || strcmp(cmd, "status") == 0) {
         rc = cmd_stats(argc - 2, argv + 2);
         return finish_command(cmd, rc, start_ms);
@@ -82,6 +101,31 @@ return finish_command(cmd, rc, start_ms);
 
     if (strcmp(cmd, "dedupe") == 0) {
         rc = cmd_dedupe(argc - 2, argv + 2);
+        return finish_command(cmd, rc, start_ms);
+    }
+
+    if (strcmp(cmd, "action") == 0) {
+        rc = cmd_action(argc - 2, argv + 2);
+        return finish_command(cmd, rc, start_ms);
+    }
+
+    if (strcmp(cmd, "session") == 0) {
+        rc = cmd_session(argc - 2, argv + 2);
+        return finish_command(cmd, rc, start_ms);
+    }
+
+    if (strcmp(cmd, "history") == 0) {
+        rc = cmd_history(argc - 2, argv + 2);
+        return finish_command(cmd, rc, start_ms);
+    }
+
+    if (strcmp(cmd, "similar") == 0) {
+        rc = cmd_similar(argc - 2, argv + 2);
+        return finish_command(cmd, rc, start_ms);
+    }
+
+    if (strcmp(cmd, "window-api") == 0) {
+        rc = cmd_window_api(argc - 2, argv + 2);
         return finish_command(cmd, rc, start_ms);
     }
 
