@@ -9,10 +9,11 @@
 CORE INDEXING + SEARCH
 ──────────────────────────────────────────────────────────────────────
 ```text
-loogal index <directories...>
-```
-    → Scans directories and builds/updates binary visual index
+loogal index <directories...> ```
 
+
+→ Scans directories and builds/updates binary visual index
+```
 loogal learn <directories...>
     → Incremental learning (adds new images without full rebuild)
 
@@ -22,7 +23,7 @@ loogal search <image> [MIN_PERCENT]
 
 loogal stats
     → Shows index stats (image count, size, etc.)
-
+```
 
 DEDUPLICATION
 ──────────────────────────────────────────────────────────────────────
