@@ -42,7 +42,9 @@ A new window opens.
 And there it is:
 
   98%  ~/Downloads/telegram/meme_copy.jpg
+  
   96%  ~/Pictures/old/screenshots/same_meme.webp
+  
   93%  ~/Documents/archive/report.pdf:page-17:image-002
 
 Folders you forgot.
@@ -55,9 +57,7 @@ it found all of them.
 
 --------------------------------------------------------------------------------
 
-THE FEELING
 
-This is the part that hits:
 
 “I always knew this should be possible.”
 
@@ -68,6 +68,8 @@ Not uploading your life somewhere.
 Just your machine…
 
 finally remembering what it has seen.
+
+It's about time! 
 
 --------------------------------------------------------------------------------
 
