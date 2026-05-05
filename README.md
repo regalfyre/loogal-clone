@@ -1,9 +1,7 @@
-================================================================================
-LOOGAL — DROP ANYWHERE
-Local Visual Memory Engine (V1)
+Click.Drop.Done
+==========================================
+## LOOGAL 
 
-"Search what it looks like — not where it lives."
-================================================================================
 
 WHAT IS LOOGAL?
 
