@@ -17,3 +17,18 @@ data/records.jsonl
 
 # test junk
 data/.loogal_action_test_file.txt
+
+# local test data
+test-index/
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+# build outputs
+loogal
+loogal-window
+loogal-gallery-window
+
+# runtime data
+data/logs/
