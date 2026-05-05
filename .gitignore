@@ -32,3 +32,13 @@ loogal-gallery-window
 
 # runtime data
 data/logs/
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+# images
+*.png
+*.jpg
+*.jpeg
+*.webp
